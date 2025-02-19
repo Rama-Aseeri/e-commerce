@@ -1,0 +1,46 @@
+   <app-header [setcounter]="counter"></app-header>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 ">
+            <div class="card shadow-lg rounded-4 border-0" style="background-color: #f8f9fa;">
+                <div class="card-body p-4">
+
+                    <!-- Go Back Button -->
+                    <div class="mb-3 text-center">
+                        <button class="btn btn-outline-dark" routerLink="/home">Go Back to Home</button>
+                    </div>
+
+                    <!-- Item Details -->
+                    <div class="row">
+                        <div class="col text-center">
+                            <h5 class="fw-bold ">{{data.title}}</h5>
+
+                            <p class="text-muted">{{data.description}}</p>
+                            <h4 class="text-success">{{ data.price | currency:'SAR' }}</h4>
+                        </div>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <img src={{data.image}} alt="Product Image"  class="img-fluid rounded-3 shadow "  width=150 height =150>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <button class="btn btn-success btn-lg me-2" (click)="increment()"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                            <button class="btn btn-danger btn-lg">
+                                <i class="fas fa-credit-card"></i> Pay Now
+                              </button>
+                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

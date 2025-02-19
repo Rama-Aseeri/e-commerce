@@ -1,0 +1,84 @@
+<app-header> </app-header>
+
+<div class="container vh-100 d-flex justify-content-center align-items-center mt-5 ">
+  <div class="col-md-8">
+    <div class="card shadow-lg rounded-lg mt-5">
+      <h5 class="card-header bg-dark text-white text-center py-3 ">Billing Information</h5>
+      <div class="card-body">
+        <form novalidate class="ng-untouched ng-pristine ng-invalid">
+          <div class="form-row">
+            <!-- First Name -->
+            <div class="form-group col-md-6">
+              <label for="inputFirstName" class="font-weight-bold">First Name</label>
+              <input id="inputFirstName" class="form-control form-control-lg" type="text" name="firstName" placeholder="Enter First Name" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group col-md-6">
+              <label for="inputLastName" class="font-weight-bold">Last Name</label>
+              <input id="inputLastName" class="form-control form-control-lg" type="text" name="lastName" placeholder="Enter Last Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group col-md-6">
+              <label for="inputEmail" class="font-weight-bold">Email</label>
+              <input id="inputEmail" class="form-control form-control-lg" type="email" name="email" placeholder="Enter Email" required>
+            </div>
+
+            <!-- Mobile -->
+            <div class="form-group col-md-6">
+              <label for="inputMobile" class="font-weight-bold">Mobile</label>
+              <input id="inputMobile" class="form-control form-control-lg" type="tel" name="mobile" placeholder="Enter Mobile Number" required>
+            </div>
+
+            <!-- Address 1 -->
+            <div class="form-group col-md-6">
+              <label for="inputAddress1" class="font-weight-bold">Address 1</label>
+              <input id="inputAddress1" class="form-control form-control-lg" type="text" name="addressOne" placeholder="Enter Address 1" required>
+            </div>
+
+            <!-- Address 2 -->
+            <div class="form-group col-md-6">
+              <label for="inputAddress2" class="font-weight-bold">Address 2</label>
+              <input id="inputAddress2" class="form-control form-control-lg" type="text" name="addressTwo" placeholder="Enter Address 2 (Optional)">
+            </div>
+
+            <!-- City -->
+            <div class="form-group col-md-6">
+              <label for="inputCity" class="font-weight-bold">City</label>
+              <input id="inputCity" class="form-control form-control-lg" type="text" name="city" placeholder="Enter City" required>
+            </div>
+
+            <!-- Zip Code -->
+            <div class="form-group col-md-6">
+              <label for="inputZip" class="font-weight-bold">Zip Code</label>
+              <input id="inputZip" class="form-control form-control-lg" type="text" name="zip" placeholder="Enter Zip Code" required>
+            </div>
+
+            <!-- Payment Mode -->
+            <div class="form-group col-md-6">
+              <label for="inputPaymentMode" class="font-weight-bold">Payment Mode</label>
+              <select id="inputPaymentMode" class="form-control form-control-lg" name="paymentMode" required>
+                <option value="" disabled selected>Select Payment Mode</option>
+                <option value="COD">Cash on Delivery (COD)</option>
+                <option value="UPI">UPI</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Continue Shopping Button -->
+          <div class="text-center mt-4">
+            <a class="btn btn-primary btn px-2 py-2 shadow-lg" routerLink="/home" role="button">
+              <i class="fas fa-arrow-left"></i> Continue Shopping
+            </a>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-success btn px-3 py-2 shadow-lg">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

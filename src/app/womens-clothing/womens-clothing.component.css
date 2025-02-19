@@ -1,0 +1,39 @@
+.description-btn {
+  font-size: 0.9rem;
+           /* Increase the font size slightly */
+            /* Make the text bold */
+  padding: 9px 9px;           /* Add padding to make the button larger */
+  border-radius: 30px;          /* Rounded corners */
+  background-color: #4f5760;    /* Bootstrap's info color */
+  color: white;                 /* White text */
+  border: none;                 /* Remove the border */
+  
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.description-btn:hover {
+  background-color: #030424;    /* Darker shade of blue on hover */
+  transform: scale(1.1);         /* Slightly enlarge the button on hover */
+}
+
+.description-btn:focus {
+  outline: none;                /* Remove focus outline */
+}
+
+
+.description-style {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.description-style:hover {
+  background-color: #e9ecef;     /* Slightly darker background on hover */
+  transform: translateY(-5px);    /* Lift the description slightly on hover */
+}

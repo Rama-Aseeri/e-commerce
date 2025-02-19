@@ -1,0 +1,61 @@
+
+
+<app-header> </app-header>
+
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    
+    <!-- Category 1: Electronics -->
+    <div class="col">
+      <div class="card shadow-lg h-100 border-0 rounded-3">
+        <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
+          <i class="bi bi-plug" style="font-size: 80px; color: #0a315b; margin-bottom: 10px;"></i>
+          <h5 class="card-title mt-3">
+            <a href="/electronics" class="text-decoration-none" style="color: rgb(227, 71, 146);">Electronics</a>
+          </h5>
+          <p class="card-text">Explore the latest electronics products at great prices.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2: Jewelry -->
+    <div class="col">
+      <div class="card shadow-lg h-100 border-0 rounded-3">
+        <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
+          <i class="bi bi-gem" style="font-size: 80px; color: #672063; margin-bottom: 10px;"></i>
+          <h5 class="card-title mt-3">
+            <a href="/jewelry" class="text-decoration-none" style="color: rgb(227, 71, 146);">Jewelry</a>
+          </h5>
+          <p class="card-text">Shop luxury and stylish jewelry items for every occasion.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: Women's Clothing -->
+    <div class="col">
+      <div class="card shadow-lg h-100 border-0 rounded-3">
+        <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
+          <i class="fa-solid fa-person-dress" style="font-size: 80px; color: #f8c8f8; margin-bottom: 10px;"></i>
+          <h5 class="card-title mt-3">
+            <a [routerLink]="'/women\'s clothing'" class="text-decoration-none" style="color: rgb(227, 71, 146);">Women's Clothing</a>
+          </h5>
+          <p class="card-text">Trendy and fashionable clothing for every woman.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 4: Men's Clothing -->
+    <div class="col">
+      <div class="card shadow-lg h-100 border-0 rounded-3">
+        <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
+          <i class="fa fa-male" style="font-size: 80px; color: #5bc0de; margin-bottom: 10px;"></i>
+          <h5 class="card-title mt-3">
+            <a [routerLink]="'/men\'s clothing'" class="text-decoration-none" style="color: rgb(227, 71, 146);">Men's Clothing</a>
+          </h5>
+          <p class="card-text">Stylish and comfortable clothing for men.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

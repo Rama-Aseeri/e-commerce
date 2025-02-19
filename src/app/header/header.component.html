@@ -1,0 +1,44 @@
+
+<div class="container mt-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative px-4" style="background-color: rgb(200, 200, 183);">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Logo & Store Name -->
+      <div class="d-flex align-items-center">
+        <img src="/logo.png" alt="Logo" width="80" height="80" class="rounded-circle me-3">
+        <span class="navbar-brand text-black fs-2">The Bazaar</span>
+      </div>
+
+      <!-- Navbar Toggler for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/billing">Billing</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right-aligned Social Media Icons and Cart -->
+      <ul class="navbar-nav d-flex align-items-center">
+        
+        <!-- Cart Icon with Checkout Text -->
+        <li class="nav-item mx-3">
+          <div class="nav-link d-flex align-items-center">
+            <i class="fa fa-cart-arrow-down" style="font-size: 30px; color: #0f0303;"></i>
+            <span class="ms-2 badge bg-danger"> {{setcounter}} </span>
+         
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+</div>
