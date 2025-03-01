@@ -1,3 +1,149 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+
+/* General Styling */
+.reviews-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Review Cards */
+  .review-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .review-user {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .review-date {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .review-rating {
+    font-size: 1.4rem;
+    color: #FFD700; /* Gold color for filled stars */
+  }
+  
+  .review-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Add Review Form */
+  .add-review-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-review-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .submit-review-btn {
+    padding: 12px 25px;
+    background-color: #f27fb7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-review-btn:hover {
+    background-color: #ce5c8d;
+  }
+  
+  .submit-review-btn:focus {
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .reviews-section {
+      padding: 20px;
+    }
+  
+    .review-card, .add-review-card {
+      padding: 15px;
+    }
+  }
+
+
+  /* Basic styling for the welcome message */
+.welcome-message {
+    background-color: #aed3e2; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 30px; /* Space below */
+}
+
+/* Ensuring no issues with margins or visibility */
+body {
+    margin-top: 20px; /* Adds space at the top */
+}
+

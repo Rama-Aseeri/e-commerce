@@ -2,18 +2,27 @@
 
 <app-header> </app-header>
 
+
+<!-- Welcome Message Section -->
+<section class="welcome-message m-3">
+  <p>Welcome to our store! Enjoy shopping with us. Free shipping on orders over 200 SAR!</p>
+</section>
+
+
 <div class="container mt-5">
+
   <div class="row row-cols-1 row-cols-md-3 g-4">
     
     <!-- Category 1: Electronics -->
     <div class="col">
       <div class="card shadow-lg h-100 border-0 rounded-3">
         <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
-          <i class="bi bi-plug" style="font-size: 80px; color: #0a315b; margin-bottom: 10px;"></i>
+         <img src="  /electr.jpg" width="150" height="150">
+       
           <h5 class="card-title mt-3">
-            <a href="/electronics" class="text-decoration-none" style="color: rgb(227, 71, 146);">Electronics</a>
+            <a [routerLink]="'/electronics'" class="text-decoration-none" style="color: #12030a;"><strong>Electronics</strong></a>
           </h5>
-          <p class="card-text">Explore the latest electronics products at great prices.</p>
+          <p class="card-text " style="color:#8c8c9d;">Explore the latest electronics products at great prices.</p>
         </div>
       </div>
     </div>
@@ -22,11 +31,12 @@
     <div class="col">
       <div class="card shadow-lg h-100 border-0 rounded-3">
         <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
-          <i class="bi bi-gem" style="font-size: 80px; color: #672063; margin-bottom: 10px;"></i>
+          <img src="  /necklave.jpg" width="170" height="100">
+       
           <h5 class="card-title mt-3">
-            <a href="/jewelry" class="text-decoration-none" style="color: rgb(227, 71, 146);">Jewelry</a>
+            <a [routerLink]="'/jewelry'" class="text-decoration-none" style="color: #13020a;"><strong>Jewelry</strong></a>
           </h5>
-          <p class="card-text">Shop luxury and stylish jewelry items for every occasion.</p>
+          <p class="card-text" style="color:#8c8c9d;">Shop luxury and stylish jewelry items for every occasion.</p>
         </div>
       </div>
     </div>
@@ -35,11 +45,11 @@
     <div class="col">
       <div class="card shadow-lg h-100 border-0 rounded-3">
         <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
-          <i class="fa-solid fa-person-dress" style="font-size: 80px; color: #f8c8f8; margin-bottom: 10px;"></i>
+          <img src="  /women clothing.png" width="150" height="150">
           <h5 class="card-title mt-3">
-            <a [routerLink]="'/women\'s clothing'" class="text-decoration-none" style="color: rgb(227, 71, 146);">Women's Clothing</a>
+            <a [routerLink]="'/women\'s clothing'" class="text-decoration-none" style="color: rgb(16, 1, 8);"><strong>Women's Clothing</strong></a>
           </h5>
-          <p class="card-text">Trendy and fashionable clothing for every woman.</p>
+          <p class="card-text" style="color:#8c8c9d;">Trendy and fashionable clothing for every woman.</p>
         </div>
       </div>
     </div>
@@ -48,14 +58,136 @@
     <div class="col">
       <div class="card shadow-lg h-100 border-0 rounded-3">
         <div class="card-body text-center d-flex flex-column justify-content-center align-items-center h-100">
-          <i class="fa fa-male" style="font-size: 80px; color: #5bc0de; margin-bottom: 10px;"></i>
+          <img src="  /mens clothing.webp" width="150" height="100">
           <h5 class="card-title mt-3">
-            <a [routerLink]="'/men\'s clothing'" class="text-decoration-none" style="color: rgb(227, 71, 146);">Men's Clothing</a>
+            <a [routerLink]="'/men\'s clothing'" class="text-decoration-none" style="color: rgb(19, 2, 10);"><strong>Men's Clothing</strong></a>
           </h5>
-          <p class="card-text">Stylish and comfortable clothing for men.</p>
+          <p class="card-text" style="color:#8c8c9d;">Stylish and comfortable clothing for men.</p>
         </div>
       </div>
     </div>
 
   </div>
+</div>
+
+
+
+
+<div class="container">
+
+
+<div class="reviews-section">
+  <h2 class="section-title">Customer Reviews</h2>
+
+  <!-- Review 1 -->
+  <div class="review-card">
+    <div class="review-header">
+      <div class="review-user">
+        <strong>Noor Saleh</strong>
+        <span class="review-date"> 2 days ago</span>
+      </div>
+      <div class="review-rating">
+        <!-- Star Rating -->
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <p class="review-text">Great product! I love how easy it is to use and the quality is top-notch.</p>
+  </div>
+
+  <!-- Review 2 -->
+  <div class="review-card">
+    <div class="review-header">
+      <div class="review-user">
+        <strong>Mohammed Alghamdi</strong>
+        <span class="review-date"> 1 week ago</span>
+      </div>
+      <div class="review-rating">
+        <!-- Star Rating -->
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star filled"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <p class="review-text">Good product, I love the quality.</p>
+  </div>
+
+  <!-- Add Review Form -->
+  <div class="add-review-card">
+    <h4 class="add-review-title">Add Your Review</h4>
+    <form id="review-form" class="review-form">
+      <label for="review-text">Your Review:</label>
+      <textarea id="review-text" rows="4" placeholder="Write your review here..."></textarea>
+
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+
+      <button type="submit" class="submit-review-btn">Submit Review</button>
+    </form>
+  </div>
+</div>
+</div>
+
+
+
+<!-- FAQ Section -->
+<div class="container m-5">
+  <h3>Frequently Asked Questions</h3>
+  <div class="faq-item m-3">
+      <h4>How can I track my order?</h4>
+      <p>You can track your order by logging into your account and visiting the "Orders" section.</p>
+  </div>
+  <div class="faq-item m-3">
+      <h4>What payment methods do you accept?</h4>
+      <p>We accept all major credit and debit cards, PayPal, and Apple Pay.</p>
+  </div>
+  <div class="faq-item m-3">
+      <h4>How do I return an item?</h4>
+      <p>To return an item, please visit our returns page and follow the instructions.</p>
+  </div>
+  <a href="/help-center" class="btn btn-primary">Visit Help Center</a>
+</div>
+
+
+<!-- Phone Support Section -->
+<div class="container m-5">
+  <h3>Need Help? Call Us!</h3>
+  <p>Our support team is here to assist you. Call us at:</p>
+  <p><strong>+1 800 123 4567</strong></p>
+</div>
+
+
+
+
+
+
+<div class="container m-5">
+
+<!-- Footer Section -->
+<footer style="background-color: #aed3e2; color: white; text-align: center; padding: 20px;">
+  <p>&copy; 2025 The bazaar . All rights reserved.</p>
+  <p>Follow us on 
+    <a href="#" style="color: white; text-decoration: none;">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>, 
+    <a href="#" style="color: white; text-decoration: none;">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>, and 
+    <a href="#" style="color: white; text-decoration: none;">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>.
+  </p>
+</footer>
+
 </div>

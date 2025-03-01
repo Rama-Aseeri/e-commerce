@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Component,inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+import { Observable } from 'rxjs';
+import { increment } from '../state/counter/counter.actions';
+import { decrement } from '../state/counter/counter.actions';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-details',
   standalone: false,
@@ -11,10 +15,17 @@ export class DetailsComponent {
 
 id:any;
 data:any;
+private store=inject(Store)
 counter:number=0;
+count$?:Observable<number>
 
   constructor(private route:ActivatedRoute){
-    this.id=this.route.snapshot.paramMap.get('id')}
+    this.id=this.route.snapshot.paramMap.get('id')
+    this.count$=this.store.select('counter');
+  
+  
+  }
+    
   
     ngOnInit(): void {
   
@@ -29,8 +40,30 @@ counter:number=0;
 
 
     increment(){
-      this.counter+=1;
+      this.store.dispatch(increment());
+      // Show SweetAlert2 notification
+    Swal.fire({
+      title: 'Success!',
+      text: 'item added to cart!',
+      icon: 'success',
+      timer: 1500, // Auto-close after 1.5 seconds
+      showConfirmButton: false
+    })
+  }
+
+    decrement(){
+      this.store.dispatch(decrement());
+      Swal.fire({
+        title: 'Success!',
+        text: 'item removed from cart!',
+        icon: 'success',
+        timer: 1500, // Auto-close after 1.5 seconds
+        showConfirmButton: false
+      });
     }
+
+
+
   
   }
  

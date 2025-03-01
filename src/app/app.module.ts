@@ -14,7 +14,9 @@ import { BillingComponent } from './billing/billing.component';
 
 import { RouterModule } from '@angular/router';
 import { DetailsComponent } from './details/details.component';
-import { PaynowComponent } from './paynow/paynow.component';  // Add this import
+import { PaynowComponent } from './paynow/paynow.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';  // Add this import
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { PaynowComponent } from './paynow/paynow.component';  // Add this import
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

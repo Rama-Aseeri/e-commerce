@@ -1,4 +1,4 @@
-   <app-header [setcounter]="counter"></app-header>
+   <app-header [counter]="counter"></app-header>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
@@ -32,9 +32,11 @@
                     <div class="row mt-4">
                         <div class="col text-center">
                             <button class="btn btn-success btn-lg me-2" (click)="increment()"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                            <button class="btn btn-danger btn-lg">
+                
+                            <button class="btn btn-danger btn-lg me-2" >
                                 <i class="fas fa-credit-card"></i> Pay Now
                               </button>
+                              <button class="btn btn-success btn-lg me-2" (click)="decrement()"><i class="fa-solid fa-trash" ></i> remove from Cart</button>
                         
                         </div>
                     </div>
