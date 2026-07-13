@@ -1,59 +1,150 @@
-# ECommerce
+# 🛒 E-Commerce Web Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+A modern e-commerce web application built with **Angular 19** that allows users to browse products by category, view product details, manage their shopping cart, and complete the checkout process.
 
-## Development server
+## 🌐 Live Demo
 
-To start a local development server, run:
+**Website:** https://resilient-chaja-fbdfb4.netlify.app/
+
+---
+
+## 📖 Overview
+
+This project was developed to demonstrate frontend web development skills using Angular. Product data is retrieved dynamically from the Fake Store API, providing users with a responsive shopping experience.
+
+---
+
+## ✨ Features
+
+- Browse products by category
+- Electronics section
+- Jewelry section
+- Men's Clothing section
+- Product details page
+- Shopping cart using NgRx state management
+- Billing/Checkout page
+- Responsive user interface
+- Dynamic data fetched from Fake Store API
+- Expandable product descriptions
+
+---
+
+## 🛠 Technologies Used
+
+- Angular 19
+- TypeScript
+- HTML5
+- CSS3
+- JavaScript
+- NgRx
+- Fake Store API
+- Angular Router
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── app/
+│   ├── home/
+│   ├── header/
+│   ├── electronics/
+│   ├── jewelry/
+│   ├── men-clothing/
+│   ├── details/
+│   ├── billing/
+│   ├── app-routing.module.ts
+│   └── state/
+│       └── counter/
+│           ├── counter.actions.ts
+│           └── counter.reducer.ts
+```
+
+---
+
+## 🚀 Main Functionality
+
+### Product Categories
+
+Products are loaded dynamically from the Fake Store API.
+
+Available categories include:
+
+- Electronics
+- Jewelry
+- Men's Clothing
+
+---
+
+### Product Details
+
+Users can
+
+- View product images
+- Read product descriptions
+- View pricing information
+- Expand and collapse descriptions
+
+---
+
+### Shopping Cart
+
+The application uses **NgRx** for state management.
+
+Features include
+
+- Add products to cart
+- Remove products
+- Update cart quantity
+- Dynamic cart counter
+
+---
+
+### Billing
+
+The billing page provides a simple checkout workflow where users can review their selected products before completing the purchase.
+
+---
+
+## 📡 API
+
+This project uses the **Fake Store API**
+
+https://fakestoreapi.com/
+
+Example endpoint
+
+```
+https://fakestoreapi.com/products/category/jewelery
+```
+
+---
+
+## 💻 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ecommerce.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
